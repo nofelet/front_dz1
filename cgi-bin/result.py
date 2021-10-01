@@ -24,11 +24,13 @@ if 'birth_date' in form:
     bd = form['birth_date'].value
 
 record = model.record(fn, mn, ln, bd)
-no_records = model.number_of_records(record)
+no_records, table = model.find_records(record)
 
 print(record)
 print('<br><br>')
 print('Найдено записей: ', no_records)
+print('<br><br>')
+print(table)
 
 """""
 
