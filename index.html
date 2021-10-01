@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Homework</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="https://i2.wp.com/apptractor.ru/wp-content/uploads/2014/01/bootstrap.png?fit=300%2C300&ssl=1"
+          width="30" height="30" class="d-inline-block align-top" alt="">
+        Nochlezhka search
+      </a>
+    </nav>
+    
+    <h1 class="mt-5">Search data in Nochlezhka dataset</h1>
+    <form action="/cgi-bin/result.py" method="POST">
+      <div class="mt-5 row justify-content-between">
+
+        <div class="col col-lg-10">
+
+          <div class="input-group mb-3">
+
+            <div class="form-row">
+              <div class="col">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname" name='first_name' placeholder="Имя">
+              </div>
+              <div class="col">
+                <label for="middlename">Middle Name</label>
+                <input type="text" class="form-control" id="middlename" name='middle_name' placeholder="Отчество">
+              </div>
+              <div class="col">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" name='last_name' placeholder="Фамилия">
+              </div>
+              <div class="col">
+                <label for="birthdate">Date of Birth</label>
+                <input type="date" class="form-control" id="birthdate" name='birth_date'>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col col-lg-2 ">
+          <label for="sendbutton">Send for Processing</label>
+          <button type="submit" class="btn float-right btn-primary" id="sendbutton">Process</button>
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
